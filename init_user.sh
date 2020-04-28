@@ -36,6 +36,7 @@ do
 done
 
 echo ""
+echo ""
 echo "##########"
 echo "Installing: IOTstack"
 git clone https://github.com/SensorsIot/IOTstack.git
