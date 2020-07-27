@@ -10,6 +10,19 @@ cd ~
 
 echo ""
 echo "##########"
+echo "Waiting for internet connectivity (ping 8.8.8.8)"
+while ! ping -c 1 -n -w 1 8.8.8.8 &> /dev/null
+do
+    printf "%c" "."
+done
+echo "Connection detected."
+sleep 1
+
+sudo apt update -y
+sudo apt upgrade -y
+
+echo ""
+echo "##########"
 echo "Installing: BashStyle"
 git clone https://github.com/Slyke/BashStyle.git
 cd BashStyle
