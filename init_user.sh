@@ -52,7 +52,7 @@ echo ""
 echo ""
 echo "##########"
 echo "Installing: IOTstack"
-git clone https://github.com/SensorsIot/IOTstack.git
+curl -fsSL https://raw.githubusercontent.com/SensorsIot/IOTstack/master/install.sh | bash
 
 sleep 5
 
