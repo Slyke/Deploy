@@ -19,11 +19,11 @@ sleep 5
 echo ""
 echo "##########"
 echo "Updating system"
-sudo apt update -y
+apt update -y
 
 echo ""
 echo "##########"
 echo "Installing: git, screen"
-sudo apt install git screen -y
+apt install git screen -y
 
 sleep 5
